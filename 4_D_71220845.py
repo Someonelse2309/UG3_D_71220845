@@ -1,31 +1,27 @@
-ulg = 1
-smuanama = ['']
-smuamember = ['']
-while ulg == 1:
-    print ("======= Selamat Datang =======")
-    print ("Masukan Pilihan Anda\n 1. Menambah Data\n 2. Melihat Data\n 3. Keluar")
-    pil1 = int(input(">> "))
-    if pil1 == 1:
-        nama = str(input("\nMasukan Nama Pengguna\n>> "))
-        member = str(input("Masukan Pilihan Member\n>> "))
-        smuanama.append(nama)
-        smuamember.append(member)
-        ulg = 1
-        print ("\n")
-    elif pil1 == 2:
-        a = 1
-        b = 1
-        print ("==== Nama - Membership ====\n")
-        jmlh = len(smuanama)
-        while a < jmlh:
-            print (f"{a}. {smuanama[b]} - {smuamember[b]}")
-            a += 1
-            b += 1
-        ulg = 1
-        print ("\n")
-    elif pil1 == 3:
-        print ("Terima Kasih")
-        ulg = 0
+nama = (input("Silahkan masukan nama anda\n>> "))
+prodi = (input("Silahkan masukan prodi anda\n>> "))
+nilai  = (input("Silahkan masukan nilai anda dalam huruf\n>> ")).lower()
+try:
+    nilai = int(nilai)
+    print ("Harap memasukan nilai huruf")
+except:
+    if nilai == "a":
+        print ("Nilai anda 4.00")
+    elif nilai == "a-":
+        print ("Nilai anda 3.75")
+    elif nilai == "b+":
+        print ("Nilai anda 3.25")
+    elif nilai == "b":
+        print ("Nilai anda 3.00")
+    elif nilai == "b-":
+        print ("Nilai anda 2.75")
+    elif nilai == "c+":
+        print ("Nilai anda 2.25")
+    elif nilai == "c":
+        print ("Nilai anda 2.00")
+    elif nilai == "d":
+        print ("Nilai anda 1.00")
+    elif nilai == "e":
+        print ("Nilai anda 0.00")
     else:
-        print ("Maaf Input Anda Invalid\n")
-        ulg = 1
+        print ("Nilai anda tidak terdeteksi")
