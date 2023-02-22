@@ -1,14 +1,16 @@
-plat = str(input("Masukan Plat Nomor Anda (Pisahkan dengan spasi)\n>> ")).split(" ")
-plat1 = plat[1]
-try:
-    plat1 = (int(plat1))
-    if plat1 <= 3000 and plat1 >= 0:
-        print ("Plat ini untuk Mobil")
-    elif plat1 <= 4000 and plat1 >= 3001 :
-        print ("Plat ini untuk Motor")
-    elif plat1 <= 5000 and plat1 >= 4001:
-        print ("Plat ini untuk Angkutan Umum")
+hp = str(input("Masukan Nomor Telepon Anda\n>> "))
+if len(hp)==12:
+    op1 = hp[:4]
+    if op1 == ("0816"):
+        print ("Nomor Yang Anda Gunakan Adalah Indosat")
+    elif op1 == ("0814"):
+        print ("Nomor Yang Anda Gunakan Adalah Telkomsel")
     else:
-        print ("Plat ini tidak terindikasi untuk Mobil, Motor atau Angkutan Umum")
-except:
-    print ("Maaf format anda salah")
+        print ("Maaf Nomor Yang Anda Gunakan Tidak Diketahui Operatornya")
+    gg = int(hp[-1])
+    if gg%2 == 1:
+        print ("Nomor Yang Digunakan Adalah Ganjil")
+    else:
+        print ("Nomor Yang Digunakan Adalah Genap")
+else:
+    print ("Maaf Nomor Anda Kurang/Lebih")
