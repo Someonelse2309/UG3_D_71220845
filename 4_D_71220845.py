@@ -10,15 +10,15 @@ except:
     elif nilai == "a-":
         print ("Nilai anda adalah 3.75, kamu keren!!")
     elif nilai == "b+":
-        print ("Nilai anda adalah 3.25")
+        print ("Nilai anda adalah 3.25, tapi sayangnya ga 4.00 ga skuy")
     elif nilai == "b":
-        print ("Nilai anda adalah 3.00")
+        print ("Nilai anda adalah 3.00, cupu ga 4.00")
     elif nilai == "b-":
         print ("Nilai anda adalah 2.75, kurang semangat belajar nihh")
     elif nilai == "c+":
-        print ("Nilai anda adalah 2.25")
+        print ("Nilai anda adalah 2.25, magang aja 3 bulan masa lu cuma 2,25")
     elif nilai == "c":
-        print ("Nilai anda adalah 2.00")
+        print ("Nilai anda adalah 2.00, cupu lu")
     elif nilai == "d":
         print ("Nilai anda adalah 1.00 apakah sudah anda pikirkan untuk pindah jurusan?")
     elif nilai == "e":
