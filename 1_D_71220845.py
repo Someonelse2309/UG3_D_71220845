@@ -1,0 +1,2 @@
+crh = float(input("Masukan curah hujan anda (Dalam Angka)\n>> "))
+print ("Cuaca Terang/Berawan") if crh==0 else print ("Curah Hujan Ringan") if crh >= 0.5 and crh <= 20 else print ("Curah Hujan Sedang") if crh >= 21 and crh <= 50 else print ("Curah Hujan Lebat") if crh >= 51 and crh <= 100 else print ("Curah Hujan Extream") if crh > 100 else ("Maaf Anda Salah Format")
