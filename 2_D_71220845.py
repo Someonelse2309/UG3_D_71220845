@@ -3,12 +3,12 @@ plat1 = plat[1]
 try:
     plat1 = (int(plat1))
     if plat1 <= 3000 and plat1 >= 0:
-        print ("Plat ini untuk Mobil")
+        print ("Plat nomor tersebut diperuntukan untuk Mobil")
     elif plat1 <= 4000 and plat1 >= 3001 :
-        print ("Plat ini untuk Motor")
+        print ("Plat nomor tersebut diperuntukan untuk Motor")
     elif plat1 <= 5000 and plat1 >= 4001:
-        print ("Plat ini untuk Angkutan Umum")
+        print ("Plat nomor tersebut diperuntukan untuk Angkutan Umum")
     else:
-        print ("Plat ini tidak terindikasi untuk Mobil, Motor atau Angkutan Umum")
+        print ("Plat nomor tidak terindikasi ketiga angkutan tersebut")
 except:
-    print ("Maaf format anda salah")
+    print ("Plat Nomor Tidak Terinidikasi, harus terdapat nomor kendaraan setelah kode daerah")
